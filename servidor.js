@@ -9,10 +9,6 @@ const usuarios = [
     {"id": 1, "nome": "Admin", "idade": 20, "senha": "1234"}
 ]
 
-app.listen(port, () => {
-    console.log("Servidor rodando: http://localhost:3000")
-})
-
 app.get("/", (request, response) => {
     response.send("Sucesso!")
 })
@@ -35,6 +31,7 @@ app.get("/usuarios/:id", (req, res) => {
 
 //criar usuário
 app.post("/usuarios", (req, res) => {
+    //body - corpo da requisição
     const novoUsuario = req.body;
     novoUsuario.id = usuarios.length + 1;
     usuarios.push(novoUsuario);
@@ -42,5 +39,34 @@ app.post("/usuarios", (req, res) => {
     res.status(201).send(novoUsuario) // 201 - created
 })
 
-console.log("oi gente!")
-console.log("coiso.")
+//atualizar um usuário
+
+app.put("/usuarios/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+    const novoUsuario = req.body;
+    const index = usuarios.findIndex(usuario => usuario.id == id);
+
+    if(index != null){
+        usuarios[index] = novoUsuario;
+        res.status(204).send(novoUsuario);
+    } else {
+        res.status(404).send("Usuário não encontrado!")
+    }
+})
+
+//deletar um usuário (NÃO FAÇA!)
+
+app.delete("/usuarios/delete/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+    const index = usuarios.findIndex(usuario => usuario.id == id);
+
+    if (index != null) {
+        usuarios.splice(index, 1); // slice copia, slice deleta.
+        res.status(204).send(`Usuário com id: ${id} removido com sucesso!`)
+    } else {
+        res.status(404).send("Usuário não encontrado!")
+    }
+})
+app.listen(port, () => {
+    console.log("Servidor rodando: http://localhost:3000")
+})
