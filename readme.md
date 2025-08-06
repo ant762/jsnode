@@ -197,3 +197,4 @@ app.delete("/usuarios/delete/:id", (req, res) => {
 })
 ```
 
+# Por hoje, é isso - 06 / 08
