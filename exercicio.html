@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>coiso 28 07 25</title>
+  <link rel="stylesheet" href="coiso.css">
+</head>
+<body>
+
+  <!-- 1, validação de nome -->
+  <section class="secao">
+    <label for="input-nome">Nome:</label>
+    <input type="text" id="input-nome" placeholder="Digite seu nome">
+    <p id="mensagem-erro"></p>
+    <button id="validar-btn">Validar</button>
+  </section>
+
+  <!-- 2, destaque ao passar o mouse -->
+  <section class="secao">
+    <div id="cartao-destaque">Passe o mouse aqui!</div>
+  </section>
+
+  <!-- 3, adicionar itens na lista -->
+  <section class="secao">
+    <input type="text" id="novo-item-input" placeholder="Digite um novo item">
+    <button id="adicionar-btn">Adicionar Item</button>
+    <ul id="minha-lista"></ul>
+  </section>
+
+  <!-- 4, calculadora -->
+  <section class="secao">
+    <input type="number" id="numero1" placeholder="Número 1">
+    <input type="number" id="numero2" placeholder="Número 2">
+    <select id="operacao-select">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <button id="calcular-btn">Calcular</button>
+    <p id="resultado-calculadora">Resultado: 0</p>
+  </section>
+
+  <!-- 5, tema -->
+  <section class="secao">
+    <header>
+      <h1>Minha Página</h1>
+    </header>
+    <p>Este é um exemplo de alternância de tema.</p>
+    <button id="alternar-tema-btn">Alternar Tema</button>
+  </section>
+
+  <script src="cafe.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+  }
+  
+  .secao {
+    text-align: center;
+  }
+  
+  #input-nome {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #mensagem-erro {
+    color: red;
+    font-weight: bold;
+    display: none;
+  }
+  
+  #validar-btn {
+    background-color: #008CBA;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  #cartao-destaque {
+    width: 200px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 100px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .destacado {
+    background-color: #ffd700;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+  }
+  
+
+  #novo-item-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #adicionar-btn {
+    padding: 8px 16px;
+    margin-left: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #minha-lista {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  #minha-lista li {
+    color: #444;
+    font-size: 16px;
+  }
+
+
+  input[type="number"],
+  select {
+    width: 100px;
+    padding: 6px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #calcular-btn {
+    padding: 6px 16px;
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #resultado-calculadora {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .dark-theme {
+    background-color: #333;
+    color: #f8f8f8;
+  }
+  
+  .dark-theme header h1 {
+    color: #f8f8f8;
+  }
+  
+  .dark-theme p {
+    color: #ccc;
+  }
+  
+  #alternar-tema-btn {
+    padding: 8px 16px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
