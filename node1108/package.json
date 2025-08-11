@@ -1,0 +1,17 @@
+{
+  "name": "node1108",
+  "version": "1.0.0",
+  "main": "ativ1.js",
+  "scripts": {
+    "coiso": "nodemon -e js ativ1.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {},
+  "description": ""
+}
