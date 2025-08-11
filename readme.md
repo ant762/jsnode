@@ -41,7 +41,7 @@ const express = require('express'); // framework do nodejs
 const app = express(); // transforma a framework em um objeto.
 const port = 3000; // Variável para armazenar a porta
 
-app.linsten(port, () => {
+app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`)
 })
 ```
