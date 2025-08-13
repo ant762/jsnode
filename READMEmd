@@ -21,7 +21,7 @@
 // node nome.js ##- roda servidor
 // npm init -y ##- inicia o servidor/modo padrão
 // ctrl c ##- encerra o servidor
-// npm servidor.js --watch ## atualiza o servidor automaticamente (salve)
+// node servidor.js --watch ## atualiza o servidor automaticamente (salve)
 ```
 
 ### Frameworks
